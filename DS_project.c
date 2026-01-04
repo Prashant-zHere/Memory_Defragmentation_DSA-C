@@ -28,8 +28,7 @@ int main(void)
 
     Create(&pFirst,&pLast);
     pCurrent = pFirst;
-    // Display(pFirst,pLast);
-    // printf("%d",CountNodes(pFirst,pLast));
+    
     do
     {
         printf("\n1.Insert \n");
@@ -181,14 +180,7 @@ void Display(struct node *pHead,struct node *pTail)
         pHead=pHead->pNext;
     }while(pHead!=pTail->pNext);
 
-    // do
-    // {
-        // printf("<-|%d|%d|%d|->",pHead->pPrev,pHead->iData,pHead->pNext);
-        // pHead=pHead->pNext;
-    // }while(pHead!=pTail->pNext);
-
     printf("\n");
-
 }
 
 
